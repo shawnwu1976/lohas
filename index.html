@@ -26,14 +26,21 @@
         <div id="step-0" class="p-8 flex-grow flex flex-col justify-center fade-in text-center">
             <div class="mb-6"><span class="text-5xl">📊</span></div>
             <h2 class="text-2xl font-bold text-gray-800 mb-4">處理垃圾多少錢？</h2>
-            <p class="text-gray-500 mb-8 leading-relaxed">花 1 分鐘填寫 2 題真相調查<br><span class="font-bold text-emerald-600 underline">現領一整捲14公斤專用袋 (20入)</span></p>
+            <p class="text-gray-500 mb-8 leading-relaxed">花 1 分鐘填寫 2 題真相調查<br><div class="text-center"><span class="font-bold text-emerald-600 underline text-xl">
+    現領14公斤專用袋 (20入)
+  </span>
+  <br />
+  <span class="text-sm text-gray-500">
+    本次抽獎垃圾袋由林榮顯副主委私人捐贈
+  </span>
+</div>
             
             <div class="text-left mb-6">
                 <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">請輸入戶號</label>
                 <input type="text" id="unitId" class="w-full bg-gray-50 border-2 border-gray-100 p-4 rounded-2xl focus:border-emerald-500 outline-none transition-all text-lg font-bold" placeholder="例如：G685-3">
             </div>
 
-            <button onclick="nextStep(1)" class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-black text-lg btn-shadow">開始作答</button>
+            <button onclick="nextStep(1)" class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-black text-lg btn-shadow">開始調查</button>
         </div>
 
         <div id="step-1" class="hidden p-8 flex-grow fade-in">
@@ -42,7 +49,7 @@
             
             <div class="space-y-3">
                 <button onclick="checkAns(1, 'A')" class="choice-btn w-full p-5 border-2 border-gray-100 rounded-2xl text-left font-bold hover:border-emerald-500 transition-all">A. 每年約 30 萬元</button>
-                <button onclick="checkAns(1, 'B')" class="choice-btn w-full p-5 border-2 border-gray-100 rounded-2xl text-left font-bold hover:border-emerald-500 transition-all">B. 每年約 54 萬元</button>
+                <button onclick="checkAns(1, 'B')" class="choice-btn w-full p-5 border-2 border-gray-100 rounded-2xl text-left font-bold hover:border-emerald-500 transition-all">B. 每年約 50 萬元</button>
                 <button onclick="checkAns(1, 'C')" class="choice-btn w-full p-5 border-2 border-gray-100 rounded-2xl text-left font-bold hover:border-emerald-500 transition-all">C. 每年約 70 萬元</button>
             </div>
 
